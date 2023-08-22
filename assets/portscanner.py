@@ -16,7 +16,10 @@ def scan_port(ipaddress, port):
 
 def start():
     targets = input("[*] Enter Targets to scan: ")
-    ports = int(input("[*] Enter how many ports you want to scan: "))
+    ports = int(input("[*] Number of Ports to scan[blank = all]: "))
+    if ports is None:
+        ports = 65535
+        
     try: 
         print("[*] Scanning multiple targets...")
         for ip_addr in targets.split(',', ' '):
