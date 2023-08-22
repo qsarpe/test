@@ -1,4 +1,4 @@
-import socket 
+import socket
 
 def scan(target, ports):
     print('\n' + ' Starting scan for ' + str(target))

@@ -1,6 +1,7 @@
 import os
 from assets import portscanner
 from assets import iplookup
+from colorama import Fore, Style
 
 
 # Functions Class - All ugly, back-end code will be here
@@ -26,13 +27,14 @@ class Function:
 # Menu Class - All Menus will be found in here
 class Menu:
     def logo():        
-        print("  ██████╗ ███████╗ █████╗ ██████╗ ██████╗ ███████╗ ")
-        print(" ██╔═══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝ ")
-        print(" ██║   ██║███████╗███████║██████╔╝██████╔╝█████╗   ")
-        print(" ██║▄▄ ██║╚════██║██╔══██║██╔══██╗██╔═══╝ ██╔══╝   ")
-        print(" ╚██████╔╝███████║██║  ██║██║  ██║██║     ███████╗ ")
-        print("  ╚══▀▀═╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝ ")
-        print("                 Qsarpe's Multi-Tool             \n")
+        print(Style.BRIGHT + Fore.RED + "  ██████╗ ███████╗ █████╗ ██████╗ ██████╗ ███████╗ ")
+        print(Style.BRIGHT + Fore.RED + " ██╔═══██╗██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔════╝ ")
+        print(Style.BRIGHT + Fore.RED + " ██║   ██║███████╗███████║██████╔╝██████╔╝█████╗   ")
+        print(Style.BRIGHT + Fore.RED + " ██║▄▄ ██║╚════██║██╔══██║██╔══██╗██╔═══╝ ██╔══╝   ")
+        print(Style.BRIGHT + Fore.RED + " ╚██████╔╝███████║██║  ██║██║  ██║██║     ███████╗ ")
+        print(Style.BRIGHT + Fore.RED + "  ╚══▀▀═╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚══════╝ ")
+        print(Style.BRIGHT + Fore.RED + "                 Qsarpe's Multi-Tool             \n")
+        
 
     def main():
         Menu.logo()
